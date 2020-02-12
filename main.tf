@@ -8,7 +8,7 @@ resource "aws_route53_record" "naked_host" {
     name    = var.domain_name
     type    = "A"
     ttl     = var.ttl
-    records = var.ipv6 != "" ? [var.ipv4, var.ipv6] : [var.ipv4]
+    records = var.naked_records
 }
 
 resource "aws_route53_record" "hosts" {
