@@ -27,3 +27,8 @@ variable "create_naked" {
     type = bool
     default = false
 }
+
+variable "naked_records" {
+    type = list(string)
+    default = []
+}
