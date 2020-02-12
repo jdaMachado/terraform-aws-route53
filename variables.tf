@@ -19,7 +19,7 @@ variable "ipv6" {
 }
 
 variable "hosts" {
-    type = list(map(any))
+    type = list(object({name=string, type=string, ttl=string, records=list(string)}))
     default = []
 }
 
