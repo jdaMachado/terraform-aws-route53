@@ -65,7 +65,7 @@ module "another_zone_net" {
 &nbsp;&nbsp;&nbsp;&nbsp;**name (string)**:The name for the host record  
 &nbsp;&nbsp;&nbsp;&nbsp;**type (string)**:The type of the host record  
 &nbsp;&nbsp;&nbsp;&nbsp;**ttl (string)**:TTL for the DNS host record  
-&nbsp;&nbsp;&nbsp;&nbsp;**records (list(string))**:List of records for the host record 
+&nbsp;&nbsp;&nbsp;&nbsp;**records (list(string))**:List of records for the host record  
 **hosts_with_alias (list(object))**:  
 &nbsp;&nbsp;&nbsp;&nbsp;**name (string)**:The name for the host record  
 &nbsp;&nbsp;&nbsp;&nbsp;**type (string)**:The type of the host record  
