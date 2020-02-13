@@ -67,9 +67,9 @@ module "another_zone_net" {
 &nbsp;&nbsp;&nbsp;&nbsp;**ttl (string)**:TTL for the DNS host record  
 &nbsp;&nbsp;&nbsp;&nbsp;**records (list(string))**:List of records for the host record 
 **hosts_with_alias (list(object))**:  
-&nbsp;&nbsp;&nbsp;&nbsp;**name (string)**:The name for the host record 
-&nbsp;&nbsp;&nbsp;&nbsp;**type (string)**:The type of the host record    
-&nbsp;&nbsp;&nbsp;&nbsp;**alias (map(string))**: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**name (string)**:The name of the host we want an alias of 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**zone_id (string)**:The zone_id of that host
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**evaluate_target_health (string)**: Whether we want a health check for that host
+&nbsp;&nbsp;&nbsp;&nbsp;**name (string)**:The name for the host record  
+&nbsp;&nbsp;&nbsp;&nbsp;**type (string)**:The type of the host record  
+&nbsp;&nbsp;&nbsp;&nbsp;**alias (map(string))**:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**name (string)**:The name of the host we want an alias of  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**zone_id (string)**:The zone_id of that host  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**evaluate_target_health (string)**: Whether we want a health check for that host  
