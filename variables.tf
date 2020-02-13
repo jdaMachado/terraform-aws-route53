@@ -8,16 +8,6 @@ variable "ttl" {
     default = "3600"
 }
 
-variable "ipv4" {
-    type = string
-    default = ""
-}
-
-variable "ipv6" {
-    type = string
-    default = ""
-}
-
 variable "hosts" {
     type = list(object({name=string, type=string, ttl=string, records=list(string)}))
     default = []
