@@ -1,4 +1,4 @@
-variable "domain_name" {
+variable "zone" {
     type = string
     default = ""
 }
@@ -8,11 +8,6 @@ variable "ttl" {
     default = "3600"
 }
 
-variable "hosts" {
-    type = list(object({name=string, type=string, ttl=string, records=list(string)}))
-    default = []
-}
-
 variable "create_naked" {
     type = bool
     default = false
@@ -20,5 +15,24 @@ variable "create_naked" {
 
 variable "naked_records" {
     type = list(string)
+    default = []
+}
+
+variable "hosts" {
+    type = list(object({
+        name    = string, 
+        type    = string, 
+        ttl     = string, 
+        records = list(string)
+    }))
+    default = []
+}
+
+variable "hosts_with_alias" {
+    type = list(object({
+        name    = string, 
+        type    = string,  
+        alias   = map(any)
+    }))
     default = []
 }
